@@ -25,11 +25,13 @@ Lucas:
   - Uma esfera
   - Um cilindro
 
-Marcus
+Marcus:
 - Bastão de baseball, composto de:
   - Uma cápsula
   - Um cone
   - Um cilindro
+
+A câmera implementada é a padrão do próprio Unity
 
 ## Grupo
 
