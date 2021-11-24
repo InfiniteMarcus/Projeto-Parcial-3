@@ -12,6 +12,8 @@ Além disso, criamos três materiais para colorir os objetos, e utilizamos dois 
 
 Para o PP4, pretendemos criar uma simulação de movimentação com o bastão acertando a bola e a mesma voando.
 
+Obs: É importante selecionar a cena correta, presente na pasta scenes, para visualizar o projeto.
+
 ## Modo de interação
 
 Com as teclas WASD, é possível andar pelo cenário 3D com a câmera.
