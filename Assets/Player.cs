@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class Player : MonoBehaviour
 {
-
     public Camera cam1;
     public Camera cam2;
 
@@ -15,7 +14,6 @@ public class Player : MonoBehaviour
         cam2.enabled = false;
     }
 
-    // Update is called once per frame
     void Update()
     {
         if(Input.GetKeyDown("r"))

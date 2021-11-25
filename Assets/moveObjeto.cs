@@ -4,30 +4,9 @@ using UnityEngine;
 
 public class moveObjeto : MonoBehaviour
 {
-    private Vector3 mOffset;
-    private float mZCoord;
     private bool moved;
     Animator m_Animator;
-
-    private void OnMouseDown()
-    {
-        mZCoord = Camera.main.WorldToScreenPoint(gameObject.transform.position).z;
-
-        mOffset = gameObject.transform.position - GetMouseWorldPos();
-    }
-    private Vector3 GetMouseWorldPos()
-    {
-        Vector3 mousePoint = Input.mousePosition;
-
-        mousePoint.z = mZCoord;
-
-        return Camera.main.ScreenToWorldPoint(mousePoint);
-    }
-
-    private void OnMouseDrag()
-    {
-        transform.position = GetMouseWorldPos() + mOffset;
-    }
+    public float force;
 
     private void Start()
     {
@@ -50,10 +29,12 @@ public class moveObjeto : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        float force = 15000;
 
         Vector3 dir = collision.contacts[0].point - transform.position;
         dir = -dir.normalized;
-        collision.gameObject.GetComponent<Rigidbody>().AddForce(dir*force);
+
+        Rigidbody r = collision.gameObject.GetComponent<Rigidbody>();
+        if (r)
+            r.AddForce(dir*force);
     }
 }
