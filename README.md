@@ -20,6 +20,8 @@ Colocamos algumas paredes em volta do cenário para evitar que os objetos da sim
 
 Criamos alguns scripts em C# para permitir as interações com a simulação, como iniciar a movimentação do bastão, reiniciar a simulação e trocar entre as duas câmeras disponíveis na simulação (uma para cada projeção presente no Unity).
 
+Como bônus, colocamos uma interação que permite que, na câmera de perspectiva, seja possível clicar em objetos e arrastar eles, levando-os pelo cenário da simulação.
+
 Obs: É importante selecionar a cena correta, presente na pasta `scenes`, para visualizar e executar o projeto.
 
 ## Modo de interação
@@ -42,6 +44,7 @@ Lucas:
 
 - Interações:
   - Script de mudança de câmeras
+  - Script de "clicar e arrastar" objetos na simulação
 
 Marcus:
 - Movimentações:
@@ -53,6 +56,14 @@ Marcus:
 - Interações:
   - Colliders e rigidbodys para permitir colisão entre objetos
   - Scripts para iniciar e reiniciar simulação
+
+## Observações
+
+Durante o desenvolvimento do PP4, o grupo pode presenciar dois comportamentos inusitados da simulação:
+- Algumas vezes, a animação da batida na bola gera resultados estranhos. Nem sempre a bola se movimenta como esperado
+- Por algum motivo, o bastão é o único objeto que não consegue usar o sistema de "clicar e arrastar" de objetos. Os blocos e a bola conseguem usar isso normalmente
+
+Além disso, é importante ressaltar que muitos códigos de scripts C# para interagir com o mapa da simulação no Unity foram baseados e adaptados a partir de códigos disponibilizados em fóruns da própria ferramenta, dado que o grupo não tinha muita familiaridade com a programação neste ambiente.
 
 ## Grupo
 
