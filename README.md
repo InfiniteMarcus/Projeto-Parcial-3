@@ -28,7 +28,7 @@ Obs: É importante selecionar a cena correta, presente na pasta `scenes`, para v
 
 Com as teclas WASD, é possível andar pelo cenário 3D com a câmera.
 
-Com o mouse, é possível rotacionar a câmera pelo cenário.
+Com o mouse, é possível rotacionar a câmera pelo cenário. Também é possível clicar em objetos e arrastá-los pela simulação.
 
 Outros botões importantes:
 - "Z" - inicia simulação de movimento
