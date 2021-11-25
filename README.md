@@ -39,6 +39,8 @@ Lucas:
 - Câmeras:
   - Criação de câmera da bola, na projeção paralela
   - Câmera padrão do Unity, na projeção perspectiva
+
+- Interações:
   - Script de mudança de câmeras
 
 Marcus:
